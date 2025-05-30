@@ -1,21 +1,20 @@
 
 public class ClassePrincipal {
 	
-	// M�todo chamado main
+	// M�todo chamado main
 	public static void main(String[] args) {
 		
-		String nome = "Lavinia";
-		System.out.println("Hello World, " + nome + "!"); // sysout, CTRL + SPACE
+		// Usar ClasseAlunos
+		ClasseAlunos laviniaObj = new ClasseAlunos(); // Criei um objeto ou instanciei ClassePessoa
+		ClasseAlunos muriloObj = new ClasseAlunos(); 
 
-		// Usar ClassePessoas
-		ClassePessoas alunoObj = new ClassePessoas(); // Criei um objeto ou instanciei ClassePessoa
+		laviniaObj.nomeAt = "Lavínia";
+		laviniaObj.cursoAt = "Informática";
+		laviniaObj.notaAt = 9.5F; // Obrigatório uso do "f" na frente do número, devido a casa decimal
 		
-		alunoObj.nomeAt = "Lavinia";
-		alunoObj.rendaAt = 15_000;
-		
-		System.out.println(alunoObj.nomeAt);
-		System.out.println(alunoObj.rendaAt);
-
+		System.out.println(laviniaObj.nomeAt); // sysout, CTRL + SPACE
+		System.out.println(laviniaObj.cursoAt);
+		System.out.println(laviniaObj.notaAt);
 	}
 
 }
