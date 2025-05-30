@@ -8,13 +8,18 @@ public class ClassePrincipal {
 		ClasseAlunos laviniaObj = new ClasseAlunos(); // Criei um objeto ou instanciei ClassePessoa
 		ClasseAlunos muriloObj = new ClasseAlunos(); 
 
+		// Funciona mas está errado
 		laviniaObj.nomeAt = "Lavínia";
 		laviniaObj.cursoAt = "Informática";
 		laviniaObj.notaAt = 9.5F; // Obrigatório uso do "f" na frente do número, devido a casa decimal
 		
-		System.out.println(laviniaObj.nomeAt); // sysout, CTRL + SPACE
-		System.out.println(laviniaObj.cursoAt);
-		System.out.println(laviniaObj.notaAt);
+		// Funciona, mas está errado
+		// System.out.println(laviniaObj.nomeAt); // sysout, CTRL + SPACE
+		laviniaObj.mostrarNome();
+		// System.out.println(laviniaObj.cursoAt);
+		laviniaObj.mostrarCurso();
+		// System.out.println(laviniaObj.notaAt);
+		laviniaObj.mostrarNota();
 	}
 
 }
