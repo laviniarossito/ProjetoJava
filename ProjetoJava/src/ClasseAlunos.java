@@ -1,8 +1,16 @@
 
-public class ClasseAlunos {
-	String  nomeAt; // Abaixo da class é atributo 
+public class ClasseAlunos extends ClassePessoas{ // extends = herança
+	
+	// Atributo 
 	float notaAt;
 	String cursoAt;
+	
+	// Construtor
+	public ClasseAlunos(String name, int age, int grade, String course) {
+		super(name, age);
+		this.notaAt = grade;
+		this.cursoAt = course;
+	}
 	
 	// Método para mostrar nome
 	public void mostrarNome() {
